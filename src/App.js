@@ -42,9 +42,9 @@ class App extends Component {
         >
           div 1
           {/* <input type="hidden" id="input" style={{width: "100%", height: "100%"}} accept=".png,.jpg" onChange={this.handleChange} multiple aria-label="upload images" /> */}
-          {/* {this.state.files.map(item => (
-            <li key={item}>{item}</li>
-          ))} */}
+          {this.state.files.map((item, index) => (
+            <li key={index}>{item.name}</li>
+          ))}
         </div>
 
         <div id="2" className="App-header">
